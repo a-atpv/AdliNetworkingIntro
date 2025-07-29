@@ -3,6 +3,7 @@ import UIKit
 
 class NetworkManager {
     static let shared = NetworkManager()
+    fileprivate let data = "sdfsdf"
     
     func getCurrencies(completion: @escaping ([CurrencyModel]) -> ()) {
         let url = URL(string: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd")!
@@ -28,3 +29,4 @@ class NetworkManager {
     }
     
 }
+
