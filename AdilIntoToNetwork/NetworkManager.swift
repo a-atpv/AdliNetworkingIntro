@@ -2,7 +2,9 @@ import UIKit
 
 
 class NetworkManager {
+    
     static let shared = NetworkManager()
+    
     fileprivate let data = "sdfsdf"
     
     func getCurrencies(completion: @escaping ([CurrencyModel]) -> ()) {

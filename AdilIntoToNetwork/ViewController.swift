@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     }
     
     private func getCurrencies() {
+//       
         
         NetworkManager.shared.getCurrencies { currencies in
             self.currencies = currencies

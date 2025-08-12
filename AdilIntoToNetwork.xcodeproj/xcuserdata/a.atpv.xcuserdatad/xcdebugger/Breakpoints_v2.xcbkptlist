@@ -92,13 +92,13 @@
             filePath = "AdilIntoToNetwork/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "getCurrencies()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "848527E6-4BA0-491B-A7E5-CE8744A934EF - 5c63b553add1b527"
+                  uuid = "848527E6-4BA0-491B-A7E5-CE8744A934EF - 5c63b553add1b506"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -108,11 +108,11 @@
                   urlString = "file:///Users/a.atpv/Desktop/AdilIntoToNetwork/AdilIntoToNetwork/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39">
+                  startingLineNumber = "40"
+                  endingLineNumber = "40">
                </Location>
                <Location
-                  uuid = "848527E6-4BA0-491B-A7E5-CE8744A934EF - 6a3dbb4d02b16ba0"
+                  uuid = "848527E6-4BA0-491B-A7E5-CE8744A934EF - 6a3dbb4d02b16c43"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -122,8 +122,8 @@
                   urlString = "file:///Users/a.atpv/Desktop/AdilIntoToNetwork/AdilIntoToNetwork/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40">
+                  startingLineNumber = "41"
+                  endingLineNumber = "41">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -138,8 +138,8 @@
             filePath = "AdilIntoToNetwork/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "getCurrencies()"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,8 +154,8 @@
             filePath = "AdilIntoToNetwork/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9"
-            endingLineNumber = "9"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
             landmarkName = "getCurrencies(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -170,8 +170,8 @@
             filePath = "AdilIntoToNetwork/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "getCurrencies(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,8 +186,8 @@
             filePath = "AdilIntoToNetwork/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "getCurrencies(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,8 +202,8 @@
             filePath = "AdilIntoToNetwork/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -218,8 +218,8 @@
             filePath = "AdilIntoToNetwork/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -334,36 +334,6 @@
             endingLineNumber = "91"
             landmarkName = "sortAction()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4CD7F15E-F625-4E46-86BA-24C629A8D5C6 - 39b4a25a5252874b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AdilIntoToNetwork.ViewController3.sortAction() -&gt; ()"
-                  moduleName = "AdilIntoToNetwork.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/a.atpv/Desktop/AdilIntoToNetwork/AdilIntoToNetwork/ViewController3.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "91"
-                  endingLineNumber = "91">
-               </Location>
-               <Location
-                  uuid = "4CD7F15E-F625-4E46-86BA-24C629A8D5C6 - 36607c1ca58a4fd5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (AdilIntoToNetwork.CurrencyModel, AdilIntoToNetwork.CurrencyModel) -&gt; Swift.Bool in AdilIntoToNetwork.ViewController3.sortAction() -&gt; ()"
-                  moduleName = "AdilIntoToNetwork.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/a.atpv/Desktop/AdilIntoToNetwork/AdilIntoToNetwork/ViewController3.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "91"
-                  endingLineNumber = "91">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
