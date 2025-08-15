@@ -1,6 +1,12 @@
 import UIKit
 
+protocol ToDoTaskView {
+    func showTasks(_ tasks: [ToDoTaskModel])
+}
+
 class ToDoViewController: UIViewController {
+    
+    var controller: ToDoTaskController?
     
     var tasks = [ToDoTaskModel]()
     
@@ -37,11 +43,15 @@ class ToDoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        getTasks()
-        setupUI()
         
-//        deleteName()
+        controller = ToDoTaskController()
+        controller?.view = self
+//        getTasks()
+        controller?.viewDidLoad()
+        setupUI()
+
     }
+
     
     func setupUI() {
         view.backgroundColor = .white
@@ -144,7 +154,14 @@ extension ToDoViewController: UITableViewDelegate, UITableViewDataSource, ToDoTa
     }
     
     
+}
+
+extension ToDoViewController: ToDoTaskView {
     
+    func showTasks(_ tasks: [ToDoTaskModel]) {
+        self.tasks = tasks
+        tableView.reloadData()
+    }
     
     
 }
