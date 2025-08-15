@@ -43,9 +43,10 @@ class ToDoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        controller = ToDoTaskController()
-        controller?.view = self
+        let controller1 = ToDoTaskController()
+        let view = self
+        controller1.view = view
+        view.controller = controller1
 //        getTasks()
         controller?.viewDidLoad()
         setupUI()
@@ -84,17 +85,14 @@ class ToDoViewController: UIViewController {
         
         guard let name = textField.text else { return }
 //        saveName(name)
-        RealmManager.shared.createTodo(name: name, dueDate: Date())
-        textField.text = ""
-        getTasks()
+//        RealmManager.shared.createTodo(name: name, dueDate: Date())
+//        textField.text = ""
+//        getTasks()
+        
+        controller?.createTapped(name)
     }
     
-    private func getTasks() {
-        guard let tasks = RealmManager.shared.getTasks() else { return }
-        self.tasks = tasks
-        
-        tableView.reloadData()
-    }
+
     
     private func saveName(_ name: String) {
         UserDefaults.standard.set(name, forKey: "UserName")
@@ -116,8 +114,9 @@ extension ToDoViewController: UITableViewDelegate, UITableViewDataSource, ToDoTa
     
     func buttonTapped(at index: Int) {
         let task = tasks[index]
-        RealmManager.shared.updateTaskStatus(name: task.name)
-        getTasks()
+//        RealmManager.shared.updateTaskStatus(name: task.name)
+//        getTasks()
+        controller?.doneTapped(task.name)
     }
     
     
@@ -131,8 +130,9 @@ extension ToDoViewController: UITableViewDelegate, UITableViewDataSource, ToDoTa
         let deleteAction = UIContextualAction(style: .destructive, title: "Удалить") { [weak self] (action, view, completionHandler) in
             guard let self = self else { return }
             let task = self.tasks[indexPath.row]
-            RealmManager.shared.deleteTask(name: task.name)
-            getTasks()
+//            RealmManager.shared.deleteTask(name: task.name)
+//            getTasks()
+            controller?.deleteTapped(task.name)
             completionHandler(true)
         }
         

@@ -4,27 +4,46 @@ import Foundation
 protocol ToDoTaskControllerProtocol {
     
     func viewDidLoad()
-//    func createTapped()
-//    func tapped()
-//    func doneTapped()
+    func createTapped(_ name: String)
+    func deleteTapped(_ name: String)
+    func doneTapped(_ name: String)
     
 }
 
 
 class ToDoTaskController: ToDoTaskControllerProtocol {
-    
     var view: ToDoTaskView?
     
     func viewDidLoad() {
-        let tasks = getTasks()
-        view?.showTasks(tasks)
+       getTasks()
+    }
+    func createTapped(_ name: String) {
+        
+        RealmManager.shared.createTodo(name: name, dueDate: Date())
+        getTasks()
     }
     
     
-    private func getTasks() -> [ToDoTaskModel] {
-        guard let tasks = RealmManager.shared.getTasks() else { return [] }
+    func doneTapped(_ name: String) {
+        updateTaskStatus(name: name)
+        getTasks()
+    }
+    
+    
+    func deleteTapped(_ name: String) {
+        deleteTask(name: name)
+        getTasks()
+    }
+    
+
+ 
+    
+    
+    private func getTasks() {
+        let tasks = RealmManager.shared.getTasks() ?? []
         
-        return tasks
+        
+        view?.showTasks(tasks)
     }
     
     
